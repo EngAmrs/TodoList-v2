@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -40,7 +41,8 @@ import { MyInterceptorInterceptor } from './my-interceptor.interceptor';
   providers: [
     {
       provide: HTTP_INTERCEPTORS, useClass: MyInterceptorInterceptor, multi:true
-    }
+    },
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent],
   
