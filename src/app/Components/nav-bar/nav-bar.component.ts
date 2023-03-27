@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as Bowser from "bowser";
 import { Router } from '@angular/router';
 import { AuthGuard } from '../../auth.guard';
 import { TodoService } from '../../Services/todo.service';
@@ -9,6 +10,12 @@ import { UserDataService } from "../../Services/user-data.service"
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
+ 
+  batteryPerc : number = 0;
+  browserPars = Bowser.getParser(window.navigator.userAgent);
+  browser: string =  this.browserPars.getBrowserName();
+  operatingSystem: string =  this.browserPars.getOSName();
+
   firstname: string = "";
   percentage: string = ""
   image: string = ""
@@ -20,7 +27,12 @@ export class NavBarComponent {
   
  
   constructor(private auth: AuthGuard,private user: UserDataService, private todo: TodoService, private _router: Router  ){
+     //Battery percentage
+     (navigator as any).getBattery().then((battery: any) => {
+      this.batteryPerc = Math.floor(battery.level * 100)
+    })
     
+
     this.todo.todosCounter$.subscribe((res) => {
     
       if(!res)
