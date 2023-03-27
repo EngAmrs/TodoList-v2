@@ -31,7 +31,7 @@
             <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100">Login</button></div>
             <p *ngIf="isCorrect" style="color: red;">*Incorrect data</p>
             <div id="emailHelp" class=" form-text text-center mb-5 text-light">Not
-              Registered? <a href='register' class="reg text-light fw-bold"> Create an
+              Registered? <a [routerLink]="['register']" class="reg text-light fw-bold"> Create an
                 Account</a>
             </div>
           </form>
