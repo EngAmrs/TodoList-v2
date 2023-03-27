@@ -65,7 +65,7 @@ export class NavBarComponent {
 
   logOut(){
     this.auth.isLogged = false;
-    this._router.navigate(['/login'])
+    this._router.navigate(['/'])
   }
 
 }
