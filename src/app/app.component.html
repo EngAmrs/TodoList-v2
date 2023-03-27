@@ -1,1 +1,4 @@
-<app-todo-list></app-todo-list>
+<!-- <app-todo-list></app-todo-list> -->
+<app-nav-bar *ngIf="isLoged()"></app-nav-bar>
+<router-outlet></router-outlet>
+<app-footer *ngIf="isLoged()"></app-footer>

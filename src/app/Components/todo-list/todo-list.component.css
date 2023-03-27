@@ -1,4 +1,4 @@
-body{
+section{
     background: rgb(9,14,124);
     background: linear-gradient(90deg, rgba(9,14,124,1) 0%, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 61%);
     height: 100vh;
@@ -7,7 +7,7 @@ body{
 .todos {
     display: flex;
     flex-wrap: wrap;
-    background: rgba(93, 102, 126, .4);
+    background: rgba(93, 102, 126, .8);
     border-radius: 8px;
     box-shadow: 10px 10px 5px rgba(0,0,0,.5);
 }
@@ -29,14 +29,15 @@ body{
     background:rgba(0, 212, 255, .5);
     width: 5em;
 }
-.todos ul{
+ul{
     margin: 1em 0;
     flex-basis: 100%;
-    text-align: center;
     color: #fff;
     font-weight: bolder;
     list-style: none;
 }
+
+/*
 .todos ul li{
     display: flex;
     flex-wrap: wrap;
@@ -62,15 +63,6 @@ body{
 
 .todos ul li .btns .remove i{
     color: red;
-}
+} */
 
 
-/*Done class*/
-.done{
-    text-decoration: line-through;
-    text-decoration-color: red;
-    text-decoration-thickness: 4px;
-}
-.todos ul .done .btns  .checked i{
-    color: rgba(37, 37, 107, .7);
-}

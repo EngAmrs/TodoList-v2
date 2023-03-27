@@ -1,0 +1,55 @@
+li{
+    display: flex;
+    flex-wrap: wrap;
+    border: .5px solid #ccc;
+    border-radius: 5px;
+    padding: 0 1em;
+    margin: 20px 0;
+    transition: .3s;
+
+}
+
+li:hover{
+    background-color:#fff;
+    color: #000;
+}
+li:hover .checked i{
+    color: #000;
+}
+li:hover .favorate i{
+    color: #000;
+}
+
+li span{
+    flex: 2;
+    margin-top: .5em
+ 
+ }
+li .btns{
+    flex: 1;
+    text-align: right;
+ }
+li .btns button{
+    margin: 0 10px;
+    padding: 0;
+    border: 0;
+}
+li .btns i{
+    font-size: 30px;
+    color: #fff 
+}
+
+li .btns .remove i{
+    color: red;
+}
+
+
+/*Done class*/
+.done{
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 4px;
+}
+.done .btns  .checked i{
+    color: rgb(33, 207, 33)
+}

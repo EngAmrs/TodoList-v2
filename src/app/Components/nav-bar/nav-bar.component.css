@@ -1,0 +1,38 @@
+/* .navbar{
+    display: flex;
+} */
+.navbar .profile-pic i{
+    color:cornflowerblue;
+    font-size: 2.5em;
+
+}
+.navbar h2{
+    margin: 0 .4em;
+    font-style: italic;
+}
+
+.navbar .log-out{
+    margin-left: auto;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+.navbar .log-out:hover{
+    background: rgb(245, 68, 68);
+}
+
+.navbar .progress{
+
+    flex: 1;
+    flex-basis: 50%;
+    margin: 0 20px;
+
+}
+
+.button__badge {
+    background-color: #fa3e3e;
+    border-radius: 2px;
+    color: white;
+    padding: 1px 3px;
+    font-size: 12px;
+    border-radius: 50%;
+  }

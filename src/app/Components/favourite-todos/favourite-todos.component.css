@@ -1,0 +1,66 @@
+body{
+    background: rgb(9,14,124);
+    background: linear-gradient(90deg, rgba(9,14,124,1) 0%, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 61%);
+    height: 100vh;
+}
+
+.todos {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(93, 102, 126, .4);
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px rgba(0,0,0,.5);
+}
+
+.todos h1{
+    margin: 1em 0;
+    flex-basis: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;    
+}
+
+.input-group{
+    width: 50%;
+    margin: 1em 0;
+}
+
+.input-group button{
+    background:rgba(0, 212, 255, .5);
+    width: 5em;
+}
+ul{
+    margin: 1em 0;
+    flex-basis: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+    list-style: none;
+}
+
+
+.todos ul li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+
+}
+ /* .todos ul li .btns{
+    flex: 1;
+ }
+.todos ul li .btns button{
+    margin: 0 10px;
+    padding: 0;
+    border: 0;
+}
+.todos ul li .btns i{
+    font-size: 30px;
+    color: #fff 
+}
+
+.todos ul li .btns .remove i{
+    color: red;
+}  */
+
+

@@ -1,0 +1,21 @@
+<li [ngClass]="todo.isCompleted ? 'done' : '' " *ngIf="!todo.isDeleted">
+    <span>
+        {{todo.task}}
+    </span>
+    <div class="btns">
+        <!--Favorate-->
+        <button (click)="_todos.addFavorite(todo.id)" class="favorate btn btn-default">
+            <i [ngStyle]="{'color': todo.isFavorite ? 'rgb(240, 203, 112)' : '' }" class="bi bi-star-fill"></i>
+        </button>
+
+        <!-- Done -->
+        <button (click)="_todos.completeTask(todo.id)"  class="checked btn btn-default">
+            <i class="bi bi-check-square-fill"></i>
+        </button>
+
+        <!-- Remove -->
+        <button (click)="_todos.deleteTask(todo.id)" class="remove btn btn-default">
+            <i class="bi bi-trash-fill"></i>
+        </button>
+    </div>  
+</li>
